@@ -3,7 +3,7 @@ defmodule Dictionary.AnimalList do
   @me __MODULE__
 
   def start_link() do
-    Agent.start_link(&word_list/0, name: @me)
+    Agent.start_link(&animal_list/0, name: @me)
   end
 
   def animal_list() do
