@@ -8,6 +8,8 @@ defmodule Dictionary.Application do
 
     children = [
       worker(Dictionary.WordList, []),
+      worker(Dictionary.AnimalList, []),
+      worker(Dictionary.AdjectiveList, []),
     ]
 
     options = [
